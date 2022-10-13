@@ -4,8 +4,8 @@ export interface register{
     email: string
 }
 
-export interface registerMerchant extends register{
-    cac: number
-    phonenumber: number
-    bvn: number
-}
+// export interface registerMerchant extends register{
+//     cac: number
+//     phonenumber: number
+//     bvn: number
+

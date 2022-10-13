@@ -19,7 +19,7 @@ mongoose.connect('mongodb://localhost:27017/crypto-market', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 } as ConnectOptions, () => {
-    console.log('Connected to database');
+    console.log("Connected to database");
 })
 
 const credentialSchema = new mongoose.Schema({
@@ -42,9 +42,13 @@ const credentialSchema = new mongoose.Schema({
 
 try{
     mongoose.model("credentails", credentialSchema,"credentials").create({
-        email: "email@example.com",
-        username: "klaus139",
+        email: "nickoklaus5@gmail.com",
+        username: "klaus1111",
         password: "nickolo1232"
+    }).then(data=>{
+        console.log(data);
+    }).catch(error=>{
+        console.log(error);
     })
 } catch(error) {
     console.log(error);
